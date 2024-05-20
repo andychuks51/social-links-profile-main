@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+    --text-paragraph: 14px;
+    --text-font-regular: 400;
+    --text-font-semi-bold: 600;
+    --text-font-bold: 700; 
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif
+}
+
+
+a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: var(--neutral-white);
+}
+
+a:hover {
+    background-color: var(--primary-green);
+    color: var(--neutral-off-black);
+}
+
+span {
+    color: var(--primary-green);
+}
+
+h1 {
+    color: var(--neutral-white);
+}
+
+p {
+    color: var(--neutral-white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: var(--neutral-off-black);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+    max-width: 327px;
+    background-color: var(--neutral-dark-grey);
+    border-radius: 10px;
+
+    img {
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: var(--text-font-regular);
+    }
+
+    span {
+        font-size: var(--text-paragraph);
+        font-weight: var(--text-font-semi-bold);
+    }
+
+    p {
+        font-size: var(--text-paragraph);
+        font-weight: var(--text-font-regular);
+    }
+
+    .card-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        .card-list-items {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: var(--neutral-grey);
+            border-radius: 10px;
+            
+            a {
+                border-radius: 10px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+
+footer {
+    height: 10vh;
+    background-color: var(--neutral-off-black);
+    color: var(--neutral-white);
+
+    .attribution {
+        font-size: 11px; text-align: center;
+        
+        a { 
+            color: hsl(229, 14%, 61%); 
+        }
+
+        a:hover {
+            background-color: unset;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .card-container {
+        min-width: 384px;
+    }
+}
