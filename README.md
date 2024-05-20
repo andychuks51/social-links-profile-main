@@ -25,9 +25,9 @@ Users should be able to:
 ### Screenshot
 
 ![mobile view](./screenshots/mobile_view-1.png)
-![tavlet view](./screenshots/tablet_view-1.png)
+![tablet view](./screenshots/tablet_view-1.png)
 ![active state](./screenshots/active_state_view-1.png)
-![desktop view](./screenshots/desktop_view-1.png)
+![desktop view](./screenshots/laptop_view-1.png)
 
 ### Links
 
